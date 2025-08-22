@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AcademiaSmart Design System - Academic & Professional Theme */
+
+@layer base {
+  :root {
+    /* Academic Color Palette */
+    --background: 220 25% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Academic Blue Primary */
+    --primary: 212 85% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 212 85% 65%;
+
+    /* Professional Gray Secondary */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Academic Success Green */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 98%;
+
+    /* Warning/Alert Academic Orange */
+    --warning: 32 95% 44%;
+    --warning-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 212 85% 45%;
+
+    /* Academic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-academic: linear-gradient(135deg, hsl(212 85% 45%), hsl(142 76% 36%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(220 25% 95%));
+
+    /* Academic Shadows */
+    --shadow-academic: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(220 20% 15% / 0.08);
+    --shadow-floating: 0 20px 60px -20px hsl(var(--primary) / 0.3);
+
+    /* Professional Animations */
+    --transition-academic: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Academic Theme */
+    --background: 220 30% 8%;
+    --foreground: 220 15% 92%;
+
+    --card: 220 25% 12%;
+    --card-foreground: 220 15% 92%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 220 15% 92%;
+
+    --primary: 212 85% 55%;
+    --primary-foreground: 220 30% 8%;
+    --primary-glow: 212 85% 75%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 142 76% 46%;
+    --accent-foreground: 220 30% 8%;
+
+    --warning: 32 95% 54%;
+    --warning-foreground: 220 30% 8%;
+
+    --destructive: 0 84% 70%;
+    --destructive-foreground: 220 30% 8%;
+
+    --border: 220 20% 22%;
+    --input: 220 20% 15%;
+    --ring: 212 85% 55%;
+
+    /* Dark Academic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-academic: linear-gradient(135deg, hsl(212 85% 55%), hsl(142 76% 46%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(220 25% 12%));
+
+    --sidebar-background: 220 30% 8%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 212 85% 55%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 220 20% 22%;
+    --sidebar-ring: 212 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
